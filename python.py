@@ -1,3 +1,4 @@
+import random
 class PirateNameGenerator():
     origFirst=""
     origLast=""
@@ -5,9 +6,9 @@ class PirateNameGenerator():
     firstList=["Rusty", "Fiendish","Corky"]
     lastList=["Swindles","Swabslop","Rattlebones"]
     def __init__(self,firstName,lastName):
-        x=0
+        self.origFirst=firstName
+        self.origLast=lastName
 
     def CreateName(self):
         x=0
-
 mypirate=PirateNameGenerator("The Savage Ghost","of the East")
