@@ -1,4 +1,6 @@
 import random
+from tkinter import *
+
 class PirateNameGenerator():
     origFirst=""
     origLast=""
@@ -14,4 +16,8 @@ class PirateNameGenerator():
         y=random.randint(0,len(self.lastList)-1)
         pirateFirst=self.pirateFirstList[randF]
         pirateLast=self.pirateLastList[randL]
-        return pirateFirst+" "+pirateLast        
+        return pirateFirst+" "+pirateLast
+
+root=Tk()
+
+root.mainloop()
